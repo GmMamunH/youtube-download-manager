@@ -1,0 +1,72 @@
+@media only screen and (max-width: 768px) {
+    
+  nav {
+    flex-direction: column;
+  }
+
+  .logo {
+    max-width: 100%;
+  }
+
+  .main-menu {
+    max-width: 100%;
+  }
+
+  .main-menu ul li a {
+    color: var(--h1-color);
+    font-size: 25px;
+    font-weight: 700;
+    text-transform: capitalize;
+    
+  }
+
+  .home{
+    margin-top: 250px;
+  }
+
+  /* input media ========== */
+  form {
+    flex-direction: column;
+  }
+
+  
+  input[type="url"] {
+    width: 100%;
+    display: block;
+    height: 50px;
+    font-size: 20px;
+    padding: 15px;
+  }
+  form {
+    display: flex;
+  }
+
+  button[type="submit"] {
+    display: block;
+    background: #00bcff;
+    border: none;
+    max-width: 100%;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 500;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .download-links a {
+    color: #fff;
+    background: #00bcff;
+    text-decoration: none;
+    padding: 5px 10px;
+    display: inline-block;
+    margin: 5px;
+    border-radius: 3px;
+    transition: 0.3s;
+    font-size: 25px;
+  }
+
+
+}
