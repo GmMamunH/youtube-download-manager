@@ -23,8 +23,222 @@
       type="image/x-icon"
     />
     <!-- link css -->
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./respon.css" />
+    <!-- <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./respon.css" /> -->
+    <!-- ================================================ -->
+    <style>
+
+      /* ========= reset ================ */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-color: #fff;
+  --text-color: #040c16;
+  --h1-color: #041d34;
+}
+
+body {
+  background-color: var(--bg-color);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+/* ============== reset end ================= */
+header {
+  border-bottom: #eee 2px solid;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: #fff;
+}
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+}
+
+.logo {
+  max-width: 20%;
+}
+.main-menu {
+  max-width: 80%;
+}
+.main-menu ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-menu ul li a {
+  color: var(--h1-color);
+  font-size: 25px;
+  font-weight: 700;
+  text-transform: capitalize;
+  padding: 10px 15px;
+}
+
+.main-menu ul li a:hover {
+  color: var(--bg-color);
+  background-color: var(--h1-color);
+  border-radius: 10px;
+}
+
+.main-menu ul i {
+  font-size: 40px;
+  color: red;
+  padding: 10px 15px;
+}
+
+.main-menu ul i:hover {
+  color: var(--bg-color);
+  background-color: var(--h1-color);
+  border-radius: 10px;
+}
+/* ========== header end ========= */
+.home{
+  margin-top: 100px;
+} 
+
+.thum, .video, .audio {
+  margin-top: 10px;
+}
+.area-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.area-container .images {
+  max-width: 30%;
+}
+.area-text-content{
+  padding: 10px;
+}
+
+/* =========== download a button ========= */
+.button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #04aa6d;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {
+  background-color: #3e8e41;
+}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+/* download a button end */
+
+@media only screen and (max-width: 768px) {
+    
+    nav {
+      flex-direction: column;
+    }
+  
+    .logo {
+      max-width: 100%;
+    }
+  
+    .main-menu {
+      max-width: 100%;
+    }
+  
+    .main-menu ul li a {
+      color: var(--h1-color);
+      font-size: 25px;
+      font-weight: 700;
+      text-transform: capitalize;
+      
+    }
+  
+    .home{
+      margin-top: 250px;
+    }
+  
+    /* input media ========== */
+    form {
+      flex-direction: column;
+    }
+  
+    
+    input[type="url"] {
+      width: 100%;
+      display: block;
+      height: 50px;
+      font-size: 20px;
+      padding: 15px;
+    }
+    form {
+      display: flex;
+    }
+  
+    button[type="submit"] {
+      display: block;
+      background: #00bcff;
+      border: none;
+      max-width: 100%;
+      font-size: 20px;
+      color: #fff;
+      font-weight: 500;
+      padding: 10px;
+      margin-top: 20px;
+      border-radius: 2px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+  
+    .download-links a {
+      color: #fff;
+      background: #00bcff;
+      text-decoration: none;
+      padding: 5px 10px;
+      display: inline-block;
+      margin: 5px;
+      border-radius: 3px;
+      transition: 0.3s;
+      font-size: 25px;
+    }
+  
+  
+  }
+  
+    </style>
   </head>
   <body>
     <header class="header">
